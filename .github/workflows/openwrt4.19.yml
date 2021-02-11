@@ -64,7 +64,6 @@ jobs:
        git clone https://github.com/vernesong/OpenClash.git
        git clone https://github.com/schen39/luci-app-serverchan.git
        git clone https://github.com/cqranjian/luci-app-kod.git
-       git clone https://github.com/cqranjian/luci-app-feixunchapai.git
        git clone https://github.com/cqranjian/luci-app-pptp-vpnserver.git
        # git clone https://github.com/cnzd/luci-app-koolproxyR.git
        # git clone https://github.com/jerrykuku/luci-app-vssr.git
