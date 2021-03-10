@@ -68,6 +68,7 @@ jobs:
        # git clone https://github.com/lisaac/luci-lib-docker.git
        git clone https://github.com/cqranjian/openwrtplugins.git
        git clone https://github.com/riverscn/openwrt-iptvhelper.git
+       git clone https://github.com/jerrykuku/luci-app-ttnode.git
     - name: 下载插件
       run: ./scripts/feeds update -a
 
@@ -392,9 +393,9 @@ jobs:
           EOF
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-netdata=y
+          # CONFIG_PACKAGE_luci-app-netdata=y
           CONFIG_PACKAGE_luci-app-webadmin=y
-          CONFIG_PACKAGE_luci-app-ttyd=y
+          # CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-diskman=y
           # CONFIG_PACKAGE_luci-app-vssr=y
           # CONFIG_PACKAGE_lua-maxminddb=y
@@ -420,14 +421,14 @@ jobs:
           CONFIG_PACKAGE_luci-app-mwan3helper=y
           # CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
-          CONFIG_PACKAGE_luci-app-kod=y
+          # CONFIG_PACKAGE_luci-app-kod=y
           CONFIG_PACKAGE_luci-app-nfs=y
           # CONFIG_PACKAGE_luci-app-verysync=y
-          CONFIG_PACKAGE_luci-app-usb-printer=y
+          # CONFIG_PACKAGE_luci-app-usb-printer=y
           CONFIG_PACKAGE_luci-app-hd-idle=y
           # CONFIG_PACKAGE_luci-app-minidlna=y
-          CONFIG_PACKAGE_qBittorrent=y
-          CONFIG_PACKAGE_luci-app-qbittorrent=y
+          # CONFIG_PACKAGE_qBittorrent=y
+          # CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-openvpn-server=y
           CONFIG_PACKAGE_luci-app-pptp-vpnserver=y
           CONFIG_PACKAGE_luci-app-ipsec-vpnd=y
@@ -438,6 +439,7 @@ jobs:
           CONFIG_PACKAGE_feixun=y
           CONFIG_PACKAGE_luci-app-iptvhelper=y
           CONFIG_PACKAGE_iptvhelper=y
+          CONFIG_PACKAGE_luci-app-ttnode=y
           EOF
 
           # LuCI主题:
